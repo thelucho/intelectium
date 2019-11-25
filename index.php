@@ -2,7 +2,7 @@
 
 <div class="container">
     <h2 class="nosotros-conoce"><strong>Novedades</strong></h2>
-    <p class="nosotros-conoce">Enterate de todo lo que está pasando</p>
+    <p class="nosotros-conoce">Enterate de todo lo que está pasando.</p>
     <br><br>
     <div class="novedades">
 
