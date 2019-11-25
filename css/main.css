@@ -1,0 +1,841 @@
+/* SINGLE NOVEDAD */
+
+p.novedad-fecha {
+    top: 36%;
+    padding: 7px 10px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+h1.novedad-titulo {
+    font-weight: 600;
+}
+
+.content-single h2 {
+    font-weight: 400;
+}
+
+div.redes-sociales-container {
+    padding: 0px 40px;
+}
+
+div.red-social {
+    display: initial;
+    width: auto !important;
+}
+
+.red-social p.compartir {
+    margin-right: 35px;
+    font-weight: 500;
+    color: #bdbdbd;
+    letter-spacing: 2px;
+}
+
+div.likes {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+.red-social .sbtn:hover {
+    color: #404040;
+}
+
+.megusta-compartir .me-gusta img {
+    margin-top: -8px;
+    margin-right: 9px;
+}
+
+div.inicio-noticia{
+    transition: .2s;
+    /*
+    background-color: #ececec;
+    border: 1px solid #e0e0e0;
+    */
+}
+
+div.inicio-noticia:hover {
+    z-index: 999;
+    /*
+    background-color: #dadada;
+    */
+}
+
+p.inicio-noticia-texto {
+    padding-right: 30px;
+    top: 70%;
+}
+
+p.inicio-noticia-fecha {
+    top: 63%;
+}
+
+mark.inicio-resaltado-fecha {
+    padding: 2px 5px;
+}
+
+
+/* NOVEDADES - PAGINA */
+div.novedad {
+    margin-bottom: 1.2%;
+    min-width: 350px;
+    min-height: 546px;
+    /*background-color: #eaeaea;*/
+}
+
+div.novedad.sin-img {
+    background: url(http://intelectium.com/wp-content/themes/intelectium/img/default-post-novedades.jpg) center center no-repeat;
+}
+
+
+/* CONTACTO */
+h2.nosotros-conoce {
+    position: relative;
+}
+
+h2.nosotros-conoce:after {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: #00e1ee;
+    position: absolute;
+    right: -43px;
+    top: 18px;
+    display: block;
+}
+
+p.nosotros-conoce:nth-of-type(1) {
+    display: inline-block;
+    margin-left: 79px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+    position: absolute;
+}
+
+p.nosotros-conoce:after {
+    display: none;
+}
+
+p.nombre-ciudad {
+    color: #00a1e2;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 36px;
+}
+
+.contacto-ciudad ul {
+    font-weight: 500;
+}
+
+.contacto-ciudad ul li {
+    margin-bottom: 5px;
+}
+
+.contacto-ciudad ul li a {
+    margin-right: 22px;
+    text-decoration: underline;
+}
+
+.contacto-ciudad ul li a:hover {
+    text-decoration: none;
+}
+
+li.mail-intelectium {
+    color: #00a1e2;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* SERVICIOS */
+.servicios-container {
+    margin-top: 50px;
+}
+
+h2.nosotros-conoce {
+    font-weight: 700;
+}
+
+.servicios-div .nosotros-conoce:after {
+    display: none !important;
+}
+
+.servicios-container .servicios-div {
+    box-shadow: 7px 8px 15px #EDEDED;
+    width: 45%;
+    padding: 50px;
+    margin-bottom: 50px;
+    max-height: 330px;
+    position:relative;
+}
+
+.servicios-container .servicios-div h2 {
+  font-size: 2em;
+}
+
+.servicios-container .servicios-div p {
+    margin-top: 25px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.servicios-texto-boton {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #00e2ef;
+    padding: 13px 26px;
+    position: absolute;
+
+    bottom: 25px;
+
+}
+
+.landing-caja .servicios-texto-boton{
+  margin-left: 5%;
+}
+
+.boton-caja{
+
+  font-size: 1em;;
+  left:10%;
+}
+
+.servicios-container .servicios-div:nth-child(4) a {
+    background-color: #ececec;
+}
+
+.servicios-texto-boton:after {
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+p.servicios-flecha-derecha {
+    display: none;
+}
+
+.servicios-container .servicios-div .servicios-boton {
+    margin-top: 22px;
+}
+
+.servicios-container .servicios-div:nth-child(1),
+.servicios-container .servicios-div:nth-child(3),
+.servicios-container .servicios-div:nth-child(4) {
+    max-height: 300px;
+}
+
+.servicios-container .servicios-div:nth-child(2) {
+    margin-top: 100px;
+}
+
+.servicios-container .servicios-div:nth-child(3) {
+    margin-top: -100px;
+}
+
+
+
+ /* CTA - DEGRADADO */
+
+ div.degradado {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background: -webkit-linear-gradient(left, #00DBEE, #00A9E5);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.degradado h2.manifiesto-convencido,
+div.degradado h2.manifiesto-conocerte {
+    width: auto;
+    font-size: 34px;
+    line-height: 51px;
+}
+
+div.degradado .col.right a {
+    border: 2px solid #fff;
+    padding: 19px 55px;
+    margin-top: 13px;
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+div.degradado .col.right a:after {
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 13px;
+    margin-left: 25px;
+    color: #fff;
+}
+
+
+
+/* FUNDRAISING */
+
+h1.service-titulo-principal {
+    font-size: 4em;
+    font-weight: bold;
+    color: #00E1EE;
+    margin-left: -65px;
+    margin-bottom: 32px;
+}
+
+p.service-texto-principal {
+    font-size: 1.3em;
+}
+
+div.servicio-cajas-container {
+    margin-bottom: 35px;
+}
+
+.principal-service:after {
+    font-family: FontAwesome;
+    content: "\f078";
+    background-color: #00e1ee;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    bottom: 0;
+    color: #000;
+    z-index: 9999;
+    margin-top: -32px;
+}
+
+.service-medio {
+    margin-bottom: 25px;
+}
+
+h1.inicio-numero {
+    font-size: 65px;
+    font-weight: 800;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #00e2ef;
+    padding-left: 10px;
+}
+
+div.servicio-caja {
+    width: 23%;
+    box-shadow: 4px 9px 18px #EDEDED;
+    padding: 0px 10px 10px;
+}
+
+.servicio-texto {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+/* MAS SERVICIOS */
+
+h2.nosotros-conoce {
+    font-weight: 700;
+    color: #000;
+    font-size: 34px;
+    margin-left: 20px;
+}
+
+h2.servicio-titulo {
+    font-size: 1.8em;
+    margin:auto;
+    width: 80%;
+    font-weight: 700;
+    color: #000;
+    min-height: 80px;
+    margin-bottom: 25px;
+}
+
+p.servicio-texto {
+    margin:auto;
+    font-size: 20px;
+    width: 80%;
+    min-height: 84px;
+    font-size: 1.1em;
+}
+
+div.servicio {
+    width: 31%;
+    box-shadow: 8px 8px 15px #e6e6e6;
+    padding-top: 25px;
+    padding-bottom: 32px;
+    position:relative;
+    min-height: 300px;
+}
+
+
+
+.mas-servicios .servicios-texto-boton {
+    margin-left: 10% !important;
+}
+
+
+/* CO INVERSION */
+p.nosotros-conoce:nth-of-type(2) {
+    margin-left: 50px;
+}
+
+.line-left {
+    position: relative;
+    padding-left: 50px;
+}
+
+.line-left:before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #00e1ee;
+    position: absolute;
+    left: 0px;
+    top: 9px;
+    display: block;
+}
+
+div.co-inversion-caja {
+    width: 45%;
+    position: relative;
+    box-shadow: 8px 8px 20px #EDEDED;
+    padding: 25px 30px 35px 30px;
+    height: 400px !important;
+}
+
+.co-inversion-caja-titulo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.ver-mas-carrusel {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 13px 26px;
+    position: absolute;
+    bottom: 45px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.ver-mas-carrusel:after {
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.ver-mas-carrusel:hover {
+    color: #fff;
+}
+
+.item_carrusel {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+/* WPML */
+
+.wpml-ls-legacy-list-horizontal {
+    padding-left: 16px !important;
+    padding-top: 13px !important;
+}
+
+.wpml-ls-statics-shortcode_actions .wpml-ls-display {
+    display: none;
+}
+
+.wpml-ls-legacy-list-horizontal a {
+    padding: 0px 7px !important;
+}
+
+.wpml-ls-first-item a {
+    border-right: 1px solid #ccc;
+}
+
+.wpml-ls-legacy-list-horizontal a span {
+    font-weight: 600;
+    color: #afafaf;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.wpml-ls-current-language a span {
+    color: #545454;
+}
+
+img.logo {
+    margin-top: 0px;
+}
+
+img.menu {
+    position: relative;
+    margin-top: -15px;
+}
+
+nav.navbar {
+    padding-bottom: 17px;
+}
+
+
+
+.wp-pagenavi {
+    margin: 40px auto 15px auto;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+    text-decoration: none;
+    border: none;
+    padding: 5px 9px;
+    margin: 2px;
+    background-color: #eaeaea;
+    font-weight: 600;
+}
+
+.wp-pagenavi span.current {
+    font-weight: 700;
+    background-color: #00d1e2;
+    border: none;
+    color: #fff;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+
+  div.co-inversion-caja {
+      height: 500px !important;
+  }
+
+
+  h2.nosotros-conoce {
+
+      margin-left: 0px;
+  }
+
+    .content-container {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+
+    a.redirect-home {
+        width: 70%;
+        float: left;
+        padding-top: 10px;
+    }
+
+    a.redirect-home img {
+        width: 100%;
+
+    }
+
+    nav.navbar {
+        width: 99%;
+        margin: 0 0;
+        padding: 10px 0px;
+    }
+
+    div.novedad {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    p.inicio-noticia-texto {
+        top: 62%;
+        font-size: 16px;
+    }
+
+    p.inicio-noticia-fecha {
+        top: 54%;
+        font-size: 14px;
+    }
+
+    /* CONTACTO */
+
+    h2.nosotros-conoce {
+        margin-bottom: 6px;
+    }
+
+    h2.nosotros-conoce:after {
+        content: '';
+        width: 35px;
+        height: 3px;
+        background-color: #00e1ee;
+        position: absolute;
+        right: -45px;
+        top: 18px;
+        display: block;
+    }
+
+    p.nosotros-conoce:nth-of-type(1) {
+        display: inline-block;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    h2.contacto-principal {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    div.contacto-boton-empezar {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #00DEEB;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .contacto-ciudad ul li a {
+        margin-right: 16px;
+    }
+
+
+    /* SINGLE */
+    .content-single {
+        padding-top: 0vh !important;
+        padding-bottom: 0vh !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    h1.novedad-titulo {
+        top: 58%;
+    }
+
+    .content-single h2 {
+        font-size: 24px !important;
+    }
+
+    .content-single blockquote {
+        width: 100% !important;
+        position: relative;
+        box-shadow: 4px 4px 2px #EDEDED;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 20px !important;
+        margin-bottom: 35px !important;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 20px !important;
+    }
+
+    .content-single h3 {
+        font-size: 19px !important;
+        margin-bottom: 40px !important;
+        margin-top: 40px !important;
+        font-weight: 600;
+    }
+
+    div.megusta-compartir {
+        width: 100% !important;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        text-align: center;
+    }
+
+    .red-social p.compartir {
+        margin-right: 0;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    div.novedad-encabezado {
+        margin-bottom: 20px;
+    }
+
+    /* SERVICIOS */
+    .servicios-container .servicios-div {
+        width: 100%;
+        padding: 13px 36px 30px;
+        margin-bottom: 0px;
+        max-height: none !important;
+    }
+
+    .servicios-container .servicios-div:nth-child(2),
+    .servicios-container .servicios-div:nth-child(3),
+    .servicios-container .servicios-div:nth-child(4) {
+        margin-top: 40px;
+    }
+
+    div.servicio {
+        width: 100%;
+    }
+
+    p.nosotros-conoce:nth-of-type(1) {
+        padding-left: 0px;
+    }
+
+    h2.servicio-titulo {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .servicios-container .servicios-div{
+      height: 250px;
+      position: relative;
+
+    }
+
+    .servicios-container .servicios-div h2 {
+      font-size: 1.5em !important;
+    }
+
+    .servicios-container .servicios-div p {
+        margin-top: 25px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .servicios-texto-boton {
+      padding:10px 20px;
+    }
+
+    p.servicio-texto {
+        font-size: 18px;
+        min-height: 65px;
+    }
+
+
+    /* CTA - DEGRADADO */
+
+    div.degradado {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    div.degradado h2.manifiesto-convencido, div.degradado h2.manifiesto-conocerte {
+        width: auto;
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    div.degradado .col.right a {
+        padding: 15px 15px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    div.degradado h2 {
+        font-size: 22px !important;
+    }
+
+
+    /* FUNDRAISING */
+
+    .principal-service:after {
+        font-family: FontAwesome;
+        content: "\f078";
+        background-color: #00e1ee;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
+        color: #000;
+        z-index: 9999;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72vh;
+    }
+
+    h1.service-titulo-principal {
+        font-size: 45px;
+        font-weight: bold;
+        color: #00E1EE;
+        width: 80%;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: -53px;
+        text-align: center;
+    }
+
+    img.service-imagen-mobile {
+        display: inline-block;
+        width: 90%;
+        margin-top: 54px;
+        margin: 54px auto 20px auto;
+        display: block;
+    }
+
+    p.service-texto-principal {
+        font-size: 19px;
+    }
+
+    p.service-texto-principal br {
+        display: none;
+    }
+
+    .service-medio h2 {
+        font-size: 25px;
+    }
+
+    div.servicio-caja {
+        width: 100%;
+    }
+
+}
+@media (min-width: 1200px) {
+  #carNosotros .item__third{
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  #carNosotros .carousel-control.left{
+    left:25%;
+  }
+
+  #carNosotros .carousel-control.right{
+    right:31%;
+  }
+}
+
+#carNosotros .carousel-control{
+  top:39%;
+  height:40px;
+  width:40px;
+  /*
+  border-radius: 50% 50%;
+  border:1px solid #FFF;
+  background-color: #00E1EE;
+  */
+  background-color: transparent;
+  opacity: 1;
+  padding: .35%;
+}
