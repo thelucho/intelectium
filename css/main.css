@@ -511,6 +511,253 @@ nav.navbar {
 
 
 
+/*
+------------------------
+NEW BLOG
+------------------------
+*/
+
+
+/* Categories */
+.section-categories {
+    padding: 35px 0px;
+}
+
+.section-categories .navigation {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.section-categories .navigation ul li {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #696969;
+    letter-spacing: 1.5px;
+}
+
+.section-categories .navigation ul li a {
+    color: #949494;
+    padding: 8px 0px;
+    display: block;
+}
+
+.section-categories .navigation ul li a.active {
+    border-bottom: 2px solid #00a1e2;
+}
+
+.section-categories .search-box form .search-btn {
+    width: 25px;
+    height: 25px;
+    background-image: url(images/icon-search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position-y: 2px;
+    font-size: 0;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px 0;
+    z-index: 9999;
+}
+
+.section-categories .search-box form .search-input {
+    padding-left: 7px;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.5s;
+    -webkit-appearance: none;
+}
+
+.section-categories .search-box form .search-input.active {
+    opacity: 1;
+    visibility: visible;
+    width: 150px;
+    transition: all 0.5s;
+}
+
+
+/* Caousel */
+
+.section-carousel {
+    margin-bottom: 50px;
+}
+
+.section-carousel .news-carousel {
+    background: #FAFAFA;
+}
+
+.section-carousel .carousel-cell {
+    width: 55%;
+    height: 620px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 230px;
+}
+
+.section-carousel .flickity-prev-next-button {
+    top: 88%;
+    width: 82px;
+    height: 49px;
+    border-radius: 0px;
+}
+
+.section-carousel .flickity-prev-next-button.previous {
+    left: 71%;
+    background: url(images/anterior.png) center center no-repeat;
+}
+
+.section-carousel .flickity-prev-next-button.next {
+    right: 15%;
+    background: url(images/siguiente.png) center center no-repeat;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    display: none;
+}
+
+.section-carousel .carousel-cell .post-info .date span {
+    background-color: #00E2EF;
+}
+
+.section-carousel .carousel-cell .post-info .title a h2 {
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+.section-carousel .carousel-cell .post-info .title a h2 span {
+    background-color: #fff;
+}
+
+.section-carousel .carousel-cell .post-info .category {
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.section-posts .separator {
+    border-top: 1px solid #5d5d5d;
+    margin-top: 30px;
+}
+
+.section-posts .post {
+    min-height: 385px;
+    position: relative;
+}
+
+.section-posts .post .date,
+.section-posts .post .title,
+.section-posts .post .category {
+    padding: 0px 6px;
+    z-index: 2;
+}
+
+.section-posts .post .date {
+    font-weight: 600;
+    font-size: 11px;
+    padding-top: 10px;
+    color: #616161;
+}
+
+.section-posts .post .title h2 {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-top: 7px;
+}
+
+.section-posts .post .category {
+    text-transform: uppercase;
+    color: #00a1e2;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.section-posts .post .post-thumbnail {
+    position: absolute;
+    bottom: 0px;
+}
+
+.section-posts a,
+.section-posts a:hover {
+    text-decoration: none;
+}
+
+.section-posts a .post.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-posts .post.featured .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1;
+}
+
+.section-posts a .post.featured .date,
+.section-posts a .post.featured .title,
+.section-posts a .post.featured .category {
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.section-posts a .post.featured .date span {
+    background-color: #00e2ef;
+    color: #000000;
+    padding: 3px 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-posts a .post.featured .title h2 {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 25px;
+    padding-right: 70px;
+    color: #fff;
+}
+
+.section-posts a .post.featured .category {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.section-posts a .post.featured .category span {
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+
+
+
 
 /* MEDIA QUERIES */
 

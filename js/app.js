@@ -54,16 +54,19 @@ function mapaMadrid() {
 }
 
 $(document).ready(function () {
+
   $('.multi-item-carousel .item').each(function () {
     var next = $(this).next();
     if (!next.length) next = $(this).siblings(':first');
     next.children(':first-child').clone().appendTo($(this));
   });
+
   $('.multi-item-carousel .item').each(function () {
     var prev = $(this).prev();
     if (!prev.length) prev = $(this).siblings(':last');
     prev.children(':nth-last-child(2)').clone().prependTo($(this));
   });
+
   //Event for pushed the video
   $('.multi-item-carousel').carousel({
     pause: true,
@@ -117,4 +120,43 @@ $(document).ready(function () {
       mediaQueryClose();
     }
   });
+
+
+  // News Carousel
+  $('.news-carousel').flickity({
+    freeScroll: false,
+    contain: true,
+    prevNextButtons: true,
+    pageDots: false,
+    wrapAround: true
+  });
+
+
+  // Open search box on Click
+  var hide = false;
+  $('body').click(function () {
+    if (hide) $('.search-input').removeClass('active');
+    hide = true;
+  });
+
+  $(".search-btn").click(function () {
+    event.preventDefault();
+    if ($(".search-input").hasClass('active')) {
+      $("#searchform").submit();
+    }
+  });
+
+  $(".search-btn").click(function () {
+    event.preventDefault();
+    $(".search-input").addClass('active');
+    hide = false;
+  });
+
+  $(".search-input").click(function () {
+    $(".search-input").addClass('active');
+    hide = false;
+  });
+
+
+
 });
