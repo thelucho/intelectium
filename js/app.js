@@ -158,5 +158,53 @@ $(document).ready(function () {
   });
 
 
+  /*
+  var sidebar = new StickySidebar('.sidebar', {
+    topSpacing: 570,
+    //bottomSpacing: 100,
+    containerSelector: '.main-content',
+    innerWrapperSelector: '.sidebar__inner'
+  });
+
+  sidebar.updateSticky();
+  */
+
+  var sidebar = document.getElementById('sidebar');
+
+  var stickySidebar = new StickySidebar(sidebar, {
+    topSpacing: 50,
+    bottomSpacing: 0,
+    resizeSensor: true,
+    containerSelector: '.main-content',
+    innerWrapperSelector: '.sidebar__inner'
+  });
+
+
+  // Ocultar Widget (sticky sidebar) cuando llegue al final
+  $(window).scroll(function () {
+    var windowHeight = $(window).scrollTop();
+    var contenido2 = $(".footer-content").offset();
+    contenido2 = contenido2.top - 320;
+
+    if (windowHeight >= contenido2) {
+      $('#sidebar').addClass('ocultar');
+    } else {
+      $('#sidebar').removeClass('ocultar');
+    }
+  });
+
+
+  // Modificacion de Formulario de Comentarios
+  $('.form-submit #submit').val('Publicar');
+  $("input#author").attr("placeholder", "Nombre");
+  $("input#email").attr("placeholder", "Email");
+  $("textarea#comment").attr("placeholder", "Comentarios");
+
+
 
 });
+
+
+
+
+

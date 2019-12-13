@@ -33,38 +33,45 @@
 
 <div class="section-carousel">
     <div class="news-carousel">
-        <div class="carousel-cell">
+        <div class="carousel-cell" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/carousel01.jpg') center center no-repeat; background-size: cover;">
+            <div class="post-info">
+                <div class="date"><span>31 de Octubre de 2019</span></div>
+                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut sit amet</span></h2></a></div>
+                <div class="category">Vida Digital</div>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/carousel02.jpg') center center no-repeat; background-size: cover;">
+            <div class="post-info">
+                <div class="date"><span>31 de Octubre de 2019</span></div>
+                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut sit amet</span></h2></a></div>
+                <div class="category">Vida Digital</div>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/carousel01.jpg') center center no-repeat; background-size: cover;">
+            <div class="post-info">
+                <div class="date"><span>31 de Octubre de 2019</span></div>
+                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut sit amet</span></h2></a></div>
+                <div class="category">Vida Digital</div>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/carousel02.jpg') center center no-repeat; background-size: cover;">
+            <div class="post-info">
+                <div class="date"><span>31 de Octubre de 2019</span></div>
+                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut sit amet</span></h2></a></div>
+                <div class="category">Vida Digital</div>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/carousel01.jpg') center center no-repeat; background-size: cover;">
             <div class="post-info">
                 <div class="date"><span>31 de Octubre de 2019</span></div>
                 <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut</span></h2></a></div>
                 <div class="category">Vida Digital</div>
             </div>
         </div>
-        <div class="carousel-cell">
+        <div class="carousel-cell" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/carousel02.jpg') center center no-repeat; background-size: cover;">
             <div class="post-info">
                 <div class="date"><span>31 de Octubre de 2019</span></div>
-                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut</span></h2></a></div>
-                <div class="category">Vida Digital</div>
-            </div>
-        </div>
-        <div class="carousel-cell">
-            <div class="post-info">
-                <div class="date"><span>31 de Octubre de 2019</span></div>
-                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut</span></h2></a></div>
-                <div class="category">Vida Digital</div>
-            </div>
-        </div>
-        <div class="carousel-cell">
-            <div class="post-info">
-                <div class="date"><span>31 de Octubre de 2019</span></div>
-                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut</span></h2></a></div>
-                <div class="category">Vida Digital</div>
-            </div>
-        </div>
-        <div class="carousel-cell">
-            <div class="post-info">
-                <div class="date"><span>31 de Octubre de 2019</span></div>
-                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut</span></h2></a></div>
+                <div class="title"><a href="#"><h2><span>Lorem ipsum dolor sit amet gravida ut sit amet</span></h2></a></div>
                 <div class="category">Vida Digital</div>
             </div>
         </div>
@@ -77,10 +84,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="row">
+                <div class="row first-row">
                     <div class="col-md-4">
                         <a href="#">
-                            <div class="post featured"  style="background: url('<?php bloginfo( 'template_url' ); ?>/img/post-featured.jpg') center center no-repeat; background-size: cover;">
+                            <div class="post featured" style="background: url('<?php bloginfo( 'template_url' ); ?>/img/post-featured.jpg') center center no-repeat; background-size: cover;">
                                 <div class="overlay"></div>
                                 <div class="date"><span>31 de Octubre de 2019</span></div>
                                 <div class="title"><h2>Fondo Smart: Financiación para pymes en crecimiento</h2></div>
@@ -119,9 +126,7 @@
                         <hr class="separator">
                     </div>
                 </div>
-                    <!-- <div class="separator">
-                        <div class="line">
-                    </div> -->
+
                 <div class="row">
                     <div class="col-md-4">
                         <div class="post">
@@ -130,7 +135,7 @@
                             <div class="category"><span></span>Industria</div>
                             <div class="post-thumbnail">
                                 <a href="#">
-                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post.jpg" alt="" />
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
                                 </a>
                             </div>
                         </div>
@@ -142,7 +147,7 @@
                             <div class="category"><span></span>Vida Digital</div>
                             <div class="post-thumbnail">
                                 <a href="#">
-                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post2.jpg" alt="" />
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
                                 </a>
                             </div>
                         </div>
@@ -154,43 +159,187 @@
                             <div class="category"><span></span>Industria</div>
                             <div class="post-thumbnail">
                                 <a href="#">
-                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post.jpg" alt="" />
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="separator">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Industria</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Vida Digital</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Industria</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="separator">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Industria</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Vida Digital</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Industria</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="separator">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Industria</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Vida Digital</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="date"><span>31 de Octubre de 2019</span></div>
+                            <div class="title"><a href="#"><h2>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus.</h2></a></div>
+                            <div class="category"><span></span>Industria</div>
+                            <div class="post-thumbnail">
+                                <a href="#">
+                                    <img src="<?php bloginfo( 'template_url' ); ?>/img/post-normal.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="col-md-3">
                 <div class="popular-post">
-                    <div class="title">·Populares·</div>
-
-                    <?php echo do_shortcode('[wpp range="last7days" limit=5 stats_views=1 order_by="views"]'); ?>
+                    <div class="title">· Populares ·</div>
 
                     <ul>
-                        <li>
-                            <a href="#">
-                                <div class="left">
-                                    <h4>Cras scelerisque gravida vestibulum. Ut vitae suscipit lectus vestibulum</h4>
-                                    <div class="category"><span>___</span> Medicina</div>
-                                </div>
-                                <div class="right">
-                                    <img src="#">
-                                </div>
-                            </a>
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <?php
+                            query_posts('meta_key=post_views_count&posts_per_page=6&orderby=meta_value_num&
+                            order=DESC');
+                            if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <li>
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="left">
+                                        <h4><?php the_title(); ?></h4>
+                                        <div class="category"><span></span> Medicina</div>
+                                    </div>
+                                    <div class="right">
+                                        <?php if ( has_post_thumbnail() ) { ?>
+                                            <?php the_post_thumbnail('popular-thumbnail'); ?>
+                                        <?php } else { ?>
+                                            <img src="<?php bloginfo( 'template_url' ); ?>/img/popular-thumb.png">
+                                        <?php } ?>
+                                    </div>
+                                </a>
+                            </li>
+                            <?php endwhile; endif;
+                            wp_reset_query();
+                        ?>
                     </ul>
+                    
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
+<?php /*
 
 <div class="container">
     <div class="row">
@@ -248,6 +397,8 @@
         </div>
     </div>
 </div>
+
+*/ ?>
 
 
 <?php get_footer(); ?>

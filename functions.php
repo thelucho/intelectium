@@ -59,6 +59,10 @@ function theme_enqueue_styles() {
 
 	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), NULL, true );
 
+	wp_enqueue_script( 'resize-js', get_stylesheet_directory_uri() . '/js/ResizeSensor.js', array(), NULL, true );
+
+	wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/js/sticky-sidebar.js', array(), NULL, true );
+
 	wp_enqueue_script( 'app-js', get_stylesheet_directory_uri() . '/js/app.js', array(), NULL , true );
 
 
@@ -110,6 +114,9 @@ add_image_size( 'fundraising-mobile', 364, 464, true );  // Fundraising Hero - M
 add_image_size( 'casos-exito-small', 371, 371, true );  // Casos Exito - Small
 
 add_image_size( 'casos-exito-large', 655, 371, true );  // Casos Exito - Large
+
+
+add_image_size( 'popular-thumbnail', 78, 78, true );  // Popuplar Post (sidebar)
 
 
 
@@ -427,10 +434,52 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
-	// acf_add_options_sub_page(array(
-	// 	'page_title' 	=> 'Theme Footer Settings',
-	// 	'menu_title'	=> 'Footer',
-	// 	'parent_slug'	=> 'theme-general-settings',
-	// ));
+}
 
+
+
+/*
+ * Set post views count using post meta
+ */
+function setPostViews($postID) {
+    $countKey = 'post_views_count';
+    $count = get_post_meta($postID, $countKey, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $countKey);
+        add_post_meta($postID, $countKey, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $countKey, $count);
+    }
+}
+
+
+// Muestra total de comentarios
+function bld_total_comentarios() {
+	$numero_comentarios = wp_count_comments();
+	return $numero_comentarios->approved;
+}
+add_shortcode('total_comentarios','bld_total_comentarios');
+
+
+
+// change comment form fields order
+add_filter( 'comment_form_fields', 'mo_comment_fields_custom_order' );
+function mo_comment_fields_custom_order( $fields ) {
+	$comment_field = $fields['comment'];
+	$author_field = $fields['author'];
+	$email_field = $fields['email'];
+	$url_field = $fields['url'];
+	unset( $fields['comment'] );
+	unset( $fields['author'] );
+	unset( $fields['email'] );
+	unset( $fields['url'] );
+	// the order of fields is the order below, change it as needed:
+	$fields['author'] = $author_field;
+	$fields['email'] = $email_field;
+	$fields['comment'] = $comment_field;
+	
+	// done ordering, now return the fields:
+	return $fields;
 }
