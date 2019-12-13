@@ -150,7 +150,7 @@
     <div class="section-heading more-post-title">
         <div class="container">
             <div class="row">
-                <h1>Más Noticias</h1>
+                <h3>Más Noticias</h3>
                 <hr>
             </div>
         </div>
